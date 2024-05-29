@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0 (Python 3.12.1 on win32)" generated="2024-05-26T11:16:00.301056" rpa="false" schemaversion="5">
+<suite id="s1" name="Appp" source="C:\Users\firiz\NewTestApp\appp.robot">
+<test id="s1-t1" name="Open Calculator App" line="17">
+<kw name="Open Application">
+<msg time="2024-05-26T11:16:00.754207" level="FAIL">Keyword 'Open Application' expected 1 argument, got 4.</msg>
+<arg>platformName=Android</arg>
+<arg>deviceName=${DEVICE_NAME}</arg>
+<arg>appPackage=${APP_PACKAGE}</arg>
+<arg>appActivity=${APP_ACTIVITY}</arg>
+<status status="FAIL" start="2024-05-26T11:16:00.753212" elapsed="0.000995">Keyword 'Open Application' expected 1 argument, got 4.</status>
+</kw>
+<status status="FAIL" start="2024-05-26T11:16:00.752207" elapsed="0.002000">Keyword 'Open Application' expected 1 argument, got 4.</status>
+</test>
+<test id="s1-t2" name="Perform Calculation" line="22">
+<kw name="Click Element" owner="AppiumLibrary">
+<msg time="2024-05-26T11:16:00.759208" level="INFO">Clicking element 'xpath=//*[@text='2']'.</msg>
+<kw name="Capture Page Screenshot" owner="AppiumLibrary">
+<msg time="2024-05-26T11:16:00.759208" level="FAIL">No application is open</msg>
+<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
+<status status="FAIL" start="2024-05-26T11:16:00.759208" elapsed="0.012004">No application is open</status>
+</kw>
+<msg time="2024-05-26T11:16:00.773210" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: No application is open</msg>
+<msg time="2024-05-26T11:16:00.775211" level="FAIL">No application is open</msg>
+<arg>xpath=//*[@text='2']</arg>
+<doc>Click element identified by `locator`.</doc>
+<status status="FAIL" start="2024-05-26T11:16:00.757214" elapsed="0.018996">No application is open</status>
+</kw>
+<kw name="Click Element" owner="AppiumLibrary">
+<arg>xpath=//*[@text='+']</arg>
+<doc>Click element identified by `locator`.</doc>
+<status status="NOT RUN" start="2024-05-26T11:16:00.777207" elapsed="0.000000"/>
+</kw>
+<kw name="Click Element" owner="AppiumLibrary">
+<arg>xpath=//*[@text='3']</arg>
+<doc>Click element identified by `locator`.</doc>
+<status status="NOT RUN" start="2024-05-26T11:16:00.777207" elapsed="0.000000"/>
+</kw>
+<kw name="Click Element" owner="AppiumLibrary">
+<arg>xpath=//*[@text='=']</arg>
+<doc>Click element identified by `locator`.</doc>
+<status status="NOT RUN" start="2024-05-26T11:16:00.778204" elapsed="0.000000"/>
+</kw>
+<status status="FAIL" start="2024-05-26T11:16:00.756209" elapsed="0.021995">No application is open</status>
+</test>
+<status status="FAIL" start="2024-05-26T11:16:00.305053" elapsed="0.475156"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="2" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="2" skip="0" id="s1" name="Appp">Appp</stat>
+</suite>
+</statistics>
+<errors>
+<msg time="2024-05-26T11:16:00.773210" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: No application is open</msg>
+</errors>
+</robot>

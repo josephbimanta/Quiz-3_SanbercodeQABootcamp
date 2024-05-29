@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0 (Python 3.12.1 on win32)" generated="2024-05-29T20:32:38.073118" rpa="false" schemaversion="5">
+<suite id="s1" name="Booktheoneway" source="c:\Users\firiz\NewTestApp\suites\booktheoneway.robot">
+<test id="s1-t1" name="User Should Be Able To Login With Valid Credential" line="18">
+<kw name="Open Flight Application" owner="appp" type="SETUP">
+<kw name="Open Application" owner="AppiumLibrary">
+<kw name="Capture Page Screenshot" owner="AppiumLibrary">
+<msg time="2024-05-29T20:32:51.291682" level="FAIL">No application is open</msg>
+<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
+<status status="FAIL" start="2024-05-29T20:32:51.290677" elapsed="0.047997">No application is open</status>
+</kw>
+<msg time="2024-05-29T20:32:51.342674" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: No application is open</msg>
+<msg time="2024-05-29T20:32:51.348677" level="FAIL">WebDriverException: Message: An unknown server-side error occurred while processing the command. Original error: Could not proxy command to the remote server. Original error: socket hang up
+Stacktrace:
+UnknownError: An unknown server-side error occurred while processing the command. Original error: Could not proxy command to the remote server. Original error: socket hang up
+    at UIA2Proxy.command (C:\Users\firiz\AppData\Roaming\npm\node_modules\appium\node_modules\@appium\base-driver\lib\jsonwp-proxy\proxy.js:355:13)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at UiAutomator2Server.startSession (C:\Users\firiz\.appium\node_modules\appium-uiautomator2-driver\lib\uiautomator2.js:256:5)
+    at AndroidUiautomator2Driver.performSessionExecution (C:\Users\firiz\.appium\node_modules\appium-uiautomator2-driver\lib\driver.ts:613:5)
+    at AndroidUiautomator2Driver.startUiAutomator2Session (C:\Users\firiz\.appium\node_modules\appium-uiautomator2-driver\lib\driver.ts:669:5)
+    at AndroidUiautomator2Driver.createSession (C:\Users\firiz\.appium\node_modules\appium-uiautomator2-driver\lib\driver.ts:402:22)
+    at AppiumDriver.createSession (C:\Users\firiz\AppData\Roaming\npm\node_modules\appium\lib\appium.js:717:35)</msg>
+<arg>${REMOTE_URL}</arg>
+<arg>platformName=${PLATFORM_NAME}</arg>
+<arg>platformVersion=${PLATFORM_VERSION}</arg>
+<arg>deviceName=${DEVICE_NAME}</arg>
+<arg>appPackage=${APP_PACKAGE}</arg>
+<arg>appActivity=${APP_ACTIVITY}</arg>
+<arg>automationName=${ANDROID_AUTOMATION_NAME}</arg>
+<doc>Opens a new application to given Appium server.
+Capabilities of appium server, Android and iOS,
+Please check https://github.com/appium/appium/blob/master/docs/en/writing-running-appium/server-args.md
+| *Option*            | *Man.* | *Description*     |
+| remote_url          | Yes    | Appium server url |
+| alias               | no     | alias             |
+| strict_ssl          | No     | allows you to send commands to an invalid certificate host like a self-signed one. |</doc>
+<status status="FAIL" start="2024-05-29T20:32:38.763688" elapsed="12.588991">WebDriverException: Message: An unknown server-side error occurred while processing the command. Original error: Could not proxy command to the remote server. Original error: socket hang up
+Stacktrace:
+UnknownError: An unknown server-side error occurred while processing the command. Original error: Could not proxy command to the remote server. Original error: socket hang up
+    at UIA2Proxy.command (C:\Users\firiz\AppData\Roaming\npm\node_modules\appium\node_modules\@appium\base-driver\lib\jsonwp-proxy\proxy.js:355:13)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at UiAutomator2Server.startSession (C:\Users\firiz\.appium\node_modules\appium-uiautomator2-driver\lib\uiautomator2.js:256:5)
+    at AndroidUiautomator2Driver.performSessionExecution (C:\Users\firiz\.appium\node_modules\appium-uiautomator2-driver\lib\driver.ts:613:5)
+    at AndroidUiautomator2Driver.startUiAutomator2Session (C:\Users\firiz\.appium\node_modules\appium-uiautomator2-driver\lib\driver.ts:669:5)
+    at AndroidUiautomator2Driver.createSession (C:\Users\firiz\.appium\node_modules\appium-uiautomator2-driver\lib\driver.ts:402:22)
+    at AppiumDriver.createSession (C:\Users\firiz\AppData\Roaming\npm\node_modules\appium\lib\appium.js:717:35)</status>
+</kw>
+<status status="FAIL" start="2024-05-29T20:32:38.760720" elapsed="12.592978">WebDriverException: Message: An unknown server-side error occurred while processing the command. Original error: Could not proxy command to the remote server. Original error: socket hang up
+Stacktrace:
+UnknownError: An unknown server-side error occurred while processing the command. Original error: Could not proxy command to the remote server. Original error: socket hang up
+    at UIA2Proxy.command (C:\Users\firiz\AppData\Roaming\npm\node_modules\appium\node_modules\@appium\base-driver\lib\jsonwp-proxy\proxy.js:355:13)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at UiAutomator2Server.startSession (C:\Users\firiz\.appium\node_modules\appium-uiautomator2-driver\lib\uiautomator2.js:256:5)
+    at AndroidUiautomator2Driver.performSessionExecution (C:\Users\firiz\.appium\node_modules\appium-uiautomator2-driver\lib\driver.ts:613:5)
+    at AndroidUiautomator2Driver.startUiAutomator2Session (C:\Users\firiz\.appium\node_modules\appium-uiautomator2-driver\lib\driver.ts:669:5)
+    at AndroidUiautomator2Driver.createSession (C:\Users\firiz\.appium\node_modules\appium-uiautomator2-driver\lib\driver.ts:402:22)
+    at AppiumDriver.createSession (C:\Users\firiz\AppData\Roaming\npm\node_modules\appium\lib\appium.js:717:35)</status>
+</kw>
+<kw name="Close Flight Application" owner="appp" type="TEARDOWN">
+<kw name="Close Application" owner="AppiumLibrary">
+<kw name="Capture Page Screenshot" owner="AppiumLibrary">
+<msg time="2024-05-29T20:32:51.395680" level="FAIL">No application is open</msg>
+<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
+<status status="FAIL" start="2024-05-29T20:32:51.395680" elapsed="0.005999">No application is open</status>
+</kw>
+<msg time="2024-05-29T20:32:51.404677" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: No application is open</msg>
+<msg time="2024-05-29T20:32:51.421675" level="FAIL">No application is open</msg>
+<doc>Closes the current application and also close webdriver session.</doc>
+<status status="FAIL" start="2024-05-29T20:32:51.394679" elapsed="0.055999">No application is open</status>
+</kw>
+<status status="FAIL" start="2024-05-29T20:32:51.393674" elapsed="0.057004">No application is open</status>
+</kw>
+<tag>App</tag>
+<tag>mobile</tag>
+<tag>TC-001</tag>
+<status status="FAIL" start="2024-05-29T20:32:38.750691" elapsed="12.706990">Setup failed:
+WebDriverException: Message: An unknown server-side error occurred while processing the command. Original error: Could not proxy command to the remote server. Original error: socket hang up
+Stacktrace:
+UnknownError: An unknown server-side error occurred while processing the command. Original error: Could not proxy command to the remote server. Original error: socket hang up
+    at UIA2Proxy.command (C:\Users\firiz\AppData\Roaming\npm\node_modules\appium\node_modules\@appium\base-driver\lib\jsonwp-proxy\proxy.js:355:13)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at UiAutomator2Server.startSession (C:\Users\firiz\.appium\node_modules\appium-uiautomator2-driver\lib\uiautomator2.js:256:5)
+    at AndroidUiautomator2Driver.performSessionExecution (C:\Users\firiz\.appium\node_modules\appium-uiautomator2-driver\lib\driver.ts:613:5)
+    at AndroidUiautomator2Driver.startUiAutomator2Session (C:\Users\firiz\.appium\node_modules\appium-uiautomator2-driver\lib\driver.ts:669:5)
+    at AndroidUiautomator2Driver.createSession (C:\Users\firiz\.appium\node_modules\appium-uiautomator2-driver\lib\driver.ts:402:22)
+    at AppiumDriver.createSession (C:\Users\firiz\AppData\Roaming\npm\node_modules\appium\lib\appium.js:717:35)
+
+Also teardown failed:
+No application is open</status>
+</test>
+<status status="FAIL" start="2024-05-29T20:32:38.089124" elapsed="13.421559"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="0" fail="1" skip="0">App</stat>
+<stat pass="0" fail="1" skip="0">mobile</stat>
+<stat pass="0" fail="1" skip="0">TC-001</stat>
+</tag>
+<suite>
+<stat pass="0" fail="1" skip="0" id="s1" name="Booktheoneway">Booktheoneway</stat>
+</suite>
+</statistics>
+<errors>
+<msg time="2024-05-29T20:32:51.342674" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: No application is open</msg>
+<msg time="2024-05-29T20:32:51.404677" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: No application is open</msg>
+</errors>
+</robot>

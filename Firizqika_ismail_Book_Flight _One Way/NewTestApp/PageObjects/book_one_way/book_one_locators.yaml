@@ -1,0 +1,37 @@
+username_input: //android.widget.EditText[@resource-id="com.example.myapplication:id/username"]
+password_input: //android.widget.EditText[@resource-id="com.example.myapplication:id/password"]
+
+from_city: //android.widget.Spinner[@resource-id="com.example.myapplication:id/spinnerFrom"]
+#index_form_city: //android.widget.ListView
+choose_form_city: //android.widget.TextView[@resource-id="android:id/text1" and @text="Chicago"]
+
+destinantion_city: //android.widget.Spinner[@resource-id="com.example.myapplication:id/spinnerTo"]
+#index_form_city: //android.widget.ListView
+choose_destination_city: //android.widget.TextView[@resource-id="android:id/text1" and @text="London"]
+
+class: //android.widget.Spinner[@resource-id="com.example.myapplication:id/spinnerClass"]
+#index_form_city: //android.widget.ListView
+choose_class: //android.widget.TextView[@resource-id="android:id/text1" and @text="Economy"]
+
+start_date: //android.widget.TextView[@resource-id="com.example.myapplication:id/textStartDate"]
+#pick_the_date: //android.widget.FrameLayout[@resource-id="android:id/content"]
+#Month_view: //android.view.View[@resource-id="android:id/month_view"]
+#date_picker: //android.widget.DatePicker[@resource-id="android:id/datePicker"]
+#year_picker: //android.widget.TextView[@resource-id="android:id/date_picker_header_year"]
+#choose_year_picker: //android.widget.TextView[@resource-id="android:id/text1" and @text="2022"]]
+select_start_date: //android.view.View[@content-desc="02 August 2019"]
+#confirm_date: //android.widget.Button[@resource-id="android:id/button1"]
+
+end_date: //android.widget.TextView[@resource-id="com.example.myapplication:id/textEndDate"]
+end_date_picker: //android.widget.DatePicker[@resource-id="android:id/datePicker"]
+end_year_picker: //android.widget.TextView[@resource-id="android:id/date_picker_header_year"]
+end_choose_year_picker: //android.widget.TextView[@resource-id="android:id/text1" and @text="2024"]
+end_start_date: //android.view.View[@content-desc="05 August 2022"]
+
+only_flight: //android.widget.RadioButton[@resource-id="com.example.myapplication:id/radioButtonFlight"]
+flight_with_hotel: //android.widget.RadioButton[@resource-id="com.example.myapplication:id/radioButtonFlightHotel"]
+estimation: //android.widget.CheckBox[@resource-id="com.example.myapplication:id/checkBoxDay"]
+price_input: //android.widget.Button[@resource-id="com.example.myapplication:id/price2"]
+#//android.widget.EditText[@resource-id="com.example.myapplication:id/username"]
+#//android.widget.EditText[@resource-id="com.example.myapplication:id/password"]
+#//android.widget.TextView[@resource-id="android:id/text1" and @text="New York"]
