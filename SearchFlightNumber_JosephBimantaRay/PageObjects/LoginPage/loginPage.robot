@@ -1,23 +1,26 @@
 *** Settings ***
 Resource         ../base.robot
 Resource         ../HomePage/homePage.robot
+Variables        loginPage-locator.yaml
+Library          yaml
+
 
 *** Keywords ***
 Input Email
     [Arguments]                          ${email}
-    Wait Until Element Is Visible        locator=//android.widget.EditText[@resource-id="com.example.myapplication:id/username"]
-    Input Text                           locator=//android.widget.EditText[@resource-id="com.example.myapplication:id/username"]   text=${email}
+    Wait Until Element Is Visible        locator=${email_input}
+    Input Text                           locator=${email_input}   text=${email}
 
 Input Password
     [Arguments]                          ${password}
-    Input Text                           locator=//android.widget.EditText[@resource-id="com.example.myapplication:id/password"]    text=${password}
+    Input Text                           locator=${password_input}    text=${password}
 
 Click Sign In Button
-    Click Element                        locator=//android.widget.Button[@resource-id="com.example.myapplication:id/signIn"]
+    Click Element                        locator=${signin_button}
 
 Verify User Successfully Login
-    Wait Until Element Is Visible        locator=//android.widget.TextView[@resource-id="com.example.myapplication:id/textView"]
-    Element Should Be Visible            locator=//android.widget.TextView[@resource-id="com.example.myapplication:id/textView"]
+    Wait Until Element Is Visible        locator=${homepage_show}
+    Element Should Be Visible            locator=${homepage_show}
 
 Login With Valid Credential
     [Arguments]                          ${email}    ${password}
